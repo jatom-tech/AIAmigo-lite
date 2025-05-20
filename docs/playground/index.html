@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -95,18 +95,36 @@
       const idea = document.getElementById('userIdea').value.trim();
       const ideasList = document.getElementById('ideasList');
       if (idea) {
-        document.getElementById('ideaFeedback').style.display = 'block';
+        const savedIdeas = JSON.parse(localStorage.getItem('aiamigo_ideas') || "[]");
+        savedIdeas.push(idea);
+        localStorage.setItem('aiamigo_ideas', JSON.stringify(savedIdeas));
+
         const newIdea = document.createElement('div');
         newIdea.style.marginTop = "8px";
         newIdea.style.padding = "8px";
         newIdea.style.borderBottom = "1px solid #ddd";
         newIdea.textContent = "💬 " + idea;
         ideasList.appendChild(newIdea);
+
+        document.getElementById('ideaFeedback').style.display = 'block';
         document.getElementById('userIdea').value = '';
       } else {
         alert('Indtast venligst en idé!');
       }
     }
+
+    window.addEventListener('load', () => {
+      const savedIdeas = JSON.parse(localStorage.getItem('aiamigo_ideas') || "[]");
+      const ideasList = document.getElementById('ideasList');
+      savedIdeas.forEach(idea => {
+        const div = document.createElement('div');
+        div.style.marginTop = "8px";
+        div.style.padding = "8px";
+        div.style.borderBottom = "1px solid #ddd";
+        div.textContent = "💬 " + idea;
+        ideasList.appendChild(div);
+      });
+    });
   </script>
 </body>
 </html>
