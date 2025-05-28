@@ -1,64 +1,65 @@
 # 🛡️ AIAmigo Lite – Gratis Chrome Extension til AI-beskyttelse
 
-**AIAmigo Lite** hjælper dig med at undgå AI-fejl, ved at analysere dine prompts i realtid.  
-Den er anonym, enkel og helt lokal – og virker direkte i ChatGPT, Copilot og Deepseek.
+**AIAmigo Lite** er en gratis og anonym browserudvidelse, der analyserer dine AI-prompts i realtid og giver feedback via farvekoder – uden login, uden tracking.
 
-> ✅ Ingen login – ❌ Ingen tracking – 🧠 Lokal risikovurdering
+> ✅ Lokal vurdering • 🧠 Ingen backend • 🟢🟡🔴 Farvefeedback direkte i browseren
+
+---
+
+## 🆚 Lite vs. Pro-version
+
+| Funktion                          | Lite               | Pro (kommende)        |
+|----------------------------------|--------------------|------------------------|
+| Farvekodet prompt-feedback       | ✅ Ja              | ✅ Ja                 |
+| Lokal visning med skjold         | ✅ Ja              | ✅ Ja                 |
+| AmigoScore & statistikker        | ❌ Nej             | ✅ Ja                 |
+| Risk-modul (`risk-module.js`)    | ❌ Nej             | ✅ Ja                 |
+| Dialog-guide (`DialogModul.js`)  | ❌ Nej             | ✅ Ja                 |
+| Upload-analyse                   | ❌ Nej             | ✅ Ja                 |
+| Sprogvalg og segmenter           | ❌ Nej             | ✅ Ja                 |
 
 ---
 
 ## 🔧 Installation (manuelt)
 
 1. Klik på den grønne knap **“Code” → “Download ZIP”**
-2. Udpak ZIP-filen på din computer
+2. Udpak ZIP-filen
 3. Gå til `chrome://extensions/` i Chrome
-4. Aktivér **Developer mode** (øverst til højre)
-5. Klik **"Load unpacked"** og vælg den udpakkede mappe
+4. Aktivér **Developer Mode**
+5. Klik på **“Load unpacked”** og vælg den udpakkede mappe
 
-> 🔒 Extensionen gemmer ikke data og kræver ikke internetadgang.
+> 🔒 Extensionen fungerer 100% lokalt og kræver ingen registrering.
 
 ---
 
-## ⚙️ Funktioner
+## 🎯 Funktioner i Lite-versionen
 
 - Viser AIAmigo-skjold nederst til højre
-- Reagerer med farveindikator:  
-  🟢 Grøn = OK  
-  🟡 Gul = Tjek anbefales  
-  🔴 Rød = Høj risiko
-- Klik på skjoldet viser tælling af grøn/gul/rød prompts
+- Reagerer på prompts med:
+  - 🟢 Grøn = OK
+  - 🟡 Gul = Tjek anbefales
+  - 🔴 Rød = Potentiel risiko
+- Klik på skjoldet viser tælling (grøn/gul/rød)
 - Popup lukker automatisk efter 5 sekunder
-- Fuld støtte til mørk/lys tilstand
+- Tilpasser sig lys/mørk systemtilstand
 
 ---
 
-## 🛠️ Teknisk overblik
+## 🚀 Roadmap (2025)
 
-Extension-filer:
-- `manifest.json` – deklaration
-- `content.js` – overvågning og UI
-- `risk-module.js` – promptklassifikation
-- `popup.css` – stil
-- `icon.png` – ikon til Chrome UI
-
-Alt kører direkte i browseren.
-
----
-
-## 🧪 Roadmap
-
-- [ ] PRO-version med AmigoScore og analyse af uploadede filer
-- [ ] Playground til idéudvikling
-- [ ] Automatisk opdatering via Chrome Web Store
-- [ ] Sprogvalg (🇩🇰 / 🇬🇧 / 🇪🇸)
+- [ ] PRO-version med fuldt risikomodul og filanalyse
+- [ ] Playground med brugerfeedback
+- [ ] Automatisk opdatering via Web Store
+- [ ] Sprogskift og abonnementstyper
 
 ---
 
 ## 📬 Kontakt
 
-> Udviklet af Jan Thomsen  
-> 💬 Brug Issues-fanen for feedback eller kontakt via [LinkedIn](https://www.linkedin.com/in/janthomsen/)
+> Udviklet af **Jan Thomsen**  
+> 💬 Feedback? Brug Issues eller kontakt via [LinkedIn](https://www.linkedin.com/in/janthomsen/)
 
 ---
 
-© 2025 AIAmigo™ · Gratisversionen er open source (MIT-licens)
+© 2025 AIAmigo™ – Lite-versionen er open source (MIT-licens)
+
