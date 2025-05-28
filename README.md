@@ -1,3 +1,22 @@
+# AIAmigo Lite – Chrome Extension 🛡️
+
+AIAmigo Lite er en gratis browserbeskytter, som giver dig feedback på dine AI-prompts i realtid – helt anonymt.
+
+## 🔧 Sådan installerer du
+
+1. Gå til [AIAmigo-lite](https://github.com/jatom-tech/AIAmigo-lite)
+2. Klik på den grønne knap **"Code" → "Download ZIP"**
+3. Udpak ZIP-filen på din computer
+4. Åbn `chrome://extensions/` i Chrome
+5. Aktivér **Developer mode**
+6. Klik på **"Load unpacked"** og vælg den udpakkede mappe
+
+✅ Nu er AIAmigo Lite aktiv! Skjoldet vises nederst til højre.
+
+---
+
+
+
 # 🛡️ AIAmigo™ Lite – Chrome Extension (Learning Project)
 
 > ⚠️ Dette er et personligt læringsprojekt, ikke et kommercielt produkt. Det er udviklet for at lære udvikling af browser-extensions, promptanalyse og AI-risikohåndtering.
