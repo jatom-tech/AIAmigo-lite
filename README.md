@@ -1,44 +1,63 @@
-# AIAmigo Lite – Chrome Extension 🛡️
+# 🛡️ AIAmigo Lite – Gratis Chrome Extension til AI-beskyttelse
 
-AIAmigo Lite er en gratis browserbeskytter, som giver dig feedback på dine AI-prompts i realtid – helt anonymt.
+**AIAmigo Lite** giver dig feedback på dine AI-prompts i realtid (grøn / gul / rød) – helt anonymt og lokalt.  
+Designet til ChatGPT, Copilot, Deepseek m.fl.
 
-## 🔧 Sådan installerer du
-
-1. Gå til [AIAmigo-lite](https://github.com/jatom-tech/AIAmigo-lite)
-2. Klik på den grønne knap **"Code" → "Download ZIP"**
-3. Udpak ZIP-filen på din computer
-4. Åbn `chrome://extensions/` i Chrome
-5. Aktivér **Developer mode**
-6. Klik på **"Load unpacked"** og vælg den udpakkede mappe
-
-✅ Nu er AIAmigo Lite aktiv! Skjoldet vises nederst til højre.
+> ✅ Ingen login – ❌ Ingen tracking – 🧠 Lokal intelligens
 
 ---
 
+## 🔧 Installation (manuelt)
 
+1. Gå til [AIAmigo-lite repoet](https://github.com/jatom-tech/AIAmigo-lite)
+2. Klik på den grønne knap **"Code" → "Download ZIP"**
+3. Udpak ZIP-filen på din computer
+4. Åbn Chrome og gå til `chrome://extensions/`
+5. Aktivér **Developer Mode** (øverst til højre)
+6. Klik **"Load unpacked"** og vælg den udpakkede mappe
 
-# 🛡️ AIAmigo™ Lite – Chrome Extension (Learning Project)
+> 🔒 Du beholder al data lokalt. Extensionen logger ikke noget.
 
-> ⚠️ Dette er et personligt læringsprojekt, ikke et kommercielt produkt. Det er udviklet for at lære udvikling af browser-extensions, promptanalyse og AI-risikohåndtering.
+---
 
-## 🔍 Formål
-AIAmigo™ Lite er en eksperimentel Chrome Extension, som analyserer tekstinput i realtid – fx i AI-værktøjer som ChatGPT, Copilot eller DeepSeek – og giver visuel feedback om risikoniveau.
+## 🧪 Funktioner
 
-## 🧩 Funktioner
-- ✅ Klassificering af tekst som grøn, gul eller rød (baseret på mønstre og ordvalg)
-- ⚠️ Popup-advarsel ved potentielt følsomt indhold (fx CPR, sygdom, løn mv.)
-- 🛡️ Skjold med status, som vises i nederste højre hjørne
-- ❌ Ingen tracking, ingen lagring, ingen bagvedliggende server
+- Viser AIAmigo-skjold i hjørnet
+- Reagerer på dine prompts med:
+  - 🟢 Grøn: Ingen risiko
+  - 🟡 Gul: Tjek anbefales
+  - 🔴 Rød: Potentiel AI-risiko
+- Visning af antal grøn/gul/rød prompts
+- Popup-lukning efter 5 sekunder
 
-## 💻 Teknologi
-- JavaScript (Vanilla)
-- Regex og MutationObserver
-- Chrome Extension Manifest v3
+---
 
-## 📁 Projektstruktur
+## 🛠️ Teknisk
 
-📁 AIAmigoLite
-├── content.js # Detektionslogik og UI
-├── manifest.json # Chrome manifestfil
-├── icons/ # (valgfrit) egne ikoner
-└── README.md # Denne beskrivelse
+Extension består af:
+- `manifest.json`
+- `content.js` (core)
+- `risk-module.js` (klassifikation)
+- `popup.css` og billeder
+
+Kode er åben og kan frit bruges til test, feedback og forbedringer.
+
+---
+
+## 🧭 Roadmap
+
+- [ ] Pro-version med AmigoScore og filanalyse
+- [ ] Automatisk opdatering via Web Store
+- [ ] Internationalisering (🇩🇰 🇬🇧 🇪🇸)
+- [ ] Playground med brugerfeedback
+
+---
+
+## 📬 Kontakt og bidrag
+
+> 💬 **Feedback og idéer?**  
+> Brug Issues eller skriv direkte til [Jan Thomsen](https://www.linkedin.com/in/janthomsen/)
+
+---
+
+© 2025 AIAmigo™ · Gratis version under MIT-licens
